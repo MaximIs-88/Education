@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternsLearn", "PatternsLearn\PatternsLearn.csproj", "{F66DF287-9291-4D91-9975-0265DDE6ACA1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational pattern", "Creational pattern", "{07864F98-8C5A-4208-808D-2046400D4FF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{2EF22EFC-C4EC-45E6-ADA8-F80335116380}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +13,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F66DF287-9291-4D91-9975-0265DDE6ACA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F66DF287-9291-4D91-9975-0265DDE6ACA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F66DF287-9291-4D91-9975-0265DDE6ACA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F66DF287-9291-4D91-9975-0265DDE6ACA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EF22EFC-C4EC-45E6-ADA8-F80335116380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EF22EFC-C4EC-45E6-ADA8-F80335116380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EF22EFC-C4EC-45E6-ADA8-F80335116380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EF22EFC-C4EC-45E6-ADA8-F80335116380}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2EF22EFC-C4EC-45E6-ADA8-F80335116380} = {07864F98-8C5A-4208-808D-2046400D4FF5}
 	EndGlobalSection
 EndGlobal
