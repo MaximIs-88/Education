@@ -58,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Joins.sql" />
     <Content Include="DatabaseTest.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
