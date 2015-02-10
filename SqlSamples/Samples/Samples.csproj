@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CRUD.sql" />
+    <Content Include="HavingGroupBy.sql" />
     <Content Include="Joins.sql" />
     <Content Include="DatabaseTest.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
