@@ -9,8 +9,8 @@
     <ProjectGuid>{87D6766E-F07D-42B9-B09F-6E4E3FBA4203}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AspNETMVCTest.Tests</RootNamespace>
-    <AssemblyName>AspNETMVCTest.Tests</AssemblyName>
+    <RootNamespace>AspNETMVCTest.UnitTests</RootNamespace>
+    <AssemblyName>AspNETMVCTest.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

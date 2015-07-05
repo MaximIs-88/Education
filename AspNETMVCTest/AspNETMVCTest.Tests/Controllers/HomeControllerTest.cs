@@ -2,7 +2,7 @@
 using AspNETMVCTest.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AspNETMVCTest.Tests.Controllers
+namespace AspNETMVCTest.UnitTests.Controllers
 {
     [TestClass]
     public class HomeControllerTest
