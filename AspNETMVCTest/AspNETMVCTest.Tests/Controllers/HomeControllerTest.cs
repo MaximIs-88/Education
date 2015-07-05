@@ -1,54 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AspNETMVCTest;
+﻿using System.Web.Mvc;
 using AspNETMVCTest.Controllers;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AspNETMVCTest.Tests.Controllers
 {
     [TestClass]
     public class HomeControllerTest
     {
+
+        private readonly HomeController _homeController = new HomeController();
+
         [TestMethod]
         public void Index()
         {
-            // Arrange
-            HomeController controller = new HomeController();
-
-            // Act
-            ViewResult result = controller.Index() as ViewResult;
-
-            // Assert
+            var result = _homeController.Index();
             Assert.IsNotNull(result);
         }
 
         [TestMethod]
         public void About()
         {
-            // Arrange
-            HomeController controller = new HomeController();
-
-            // Act
-            ViewResult result = controller.About() as ViewResult;
-
-            // Assert
+            var result = _homeController.About() as ViewResult;
+            Assert.IsNotNull(result);
             Assert.AreEqual("Your application description page.", result.ViewBag.Message);
         }
 
         [TestMethod]
         public void Contact()
         {
-            // Arrange
-            HomeController controller = new HomeController();
-
-            // Act
-            ViewResult result = controller.Contact() as ViewResult;
-
-            // Assert
+            var result = _homeController.Contact() as ViewResult;
             Assert.IsNotNull(result);
+            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
         }
     }
 }

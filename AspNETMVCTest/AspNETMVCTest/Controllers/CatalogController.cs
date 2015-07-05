@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using AspNETMVCTest.Models;
 using Microsoft.Web.Mvc;
 
@@ -10,30 +6,45 @@ namespace AspNETMVCTest.Controllers
 {
     public class CatalogController : Controller
     {
-        //
+        private readonly IBookRepository _bookRepository = new DbBookRepository();
+//        private readonly Creator _creator = new ConcreteCreatorB();
+
         // GET: /Catalog/
         public ActionResult Index()
         {
-            this.ViewBag.Message = this.TempData["Message"];
-
-            var bookrepository = new BookRepository();
-            return this.View(bookrepository.Books);
+            ViewBag.Message = TempData["Message"];
+            return View(_bookRepository.Books);
         }
 
         // GET: /Catalog/Create/
         public ActionResult Create()
         {
-            return this.View(new BookDetails());
+            return View(new BookDetails());
         }
 
         // POST: /Catalog/Create/
         [HttpPost]
         public ActionResult Create(BookDetails newBook)
         {
-            var bookRepository = new BookRepository();
-            bookRepository.Add(newBook);
-            this.TempData["Message"] = "The book has been added to repository.";
-            return this.RedirectToAction(c => c.Index());
+            _bookRepository.Add(newBook);
+            TempData["Message"] = "The book has been added to repository.";
+            return this.RedirectToAction(c=>c.Index());
         }
+
+        //Фабричный метод
+//        abstract class Creator
+//        {
+//            public abstract IBookRepository FactoryMethod();
+//        }
+//
+//        class ConcreteCreatorA : Creator
+//        {
+//            public override IBookRepository FactoryMethod() { return new BookRepository(); }
+//        }
+//
+//        class ConcreteCreatorB : Creator
+//        {
+//            public override IBookRepository FactoryMethod() { return new DbBookRepository(); }
+//        }
     }
 }

@@ -171,6 +171,8 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BookDetails.cs" />
     <Compile Include="Models\BookRepository.cs" />
+    <Compile Include="Models\DbBookRepository.cs" />
+    <Compile Include="Models\IBookRepository.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />

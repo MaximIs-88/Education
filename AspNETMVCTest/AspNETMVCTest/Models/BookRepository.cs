@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace AspNETMVCTest.Models
 {
-    public class BookRepository
+    public class BookRepository : IBookRepository
     {
         private static int _nextId = 0;
 
